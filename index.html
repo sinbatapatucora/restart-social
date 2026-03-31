@@ -4,178 +4,337 @@
   <meta charset="UTF-8" />
   <title>Restart Social · Asociación para reinventarse y avanzar</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Restart Social impulsa el talento joven, acompaña a personas en transición y acerca oportunidades a colectivos rurales a través de bienestar, orientación e inteligencia artificial." />
+  <meta
+    name="description"
+    content="Restart Social impulsa el talento joven, acompaña a personas en transición y acerca oportunidades a colectivos rurales a través de bienestar, orientación e inteligencia artificial."
+  />
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
 </head>
 
 <body class="bg-[#F6F1E8] text-[#111111]">
 
-<!-- NAV -->
-<header class="sticky top-0 z-50 border-b border-black/10 bg-[#F6F1E8]/90 backdrop-blur">
-  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-    <div class="flex items-center gap-3">
-      <div class="w-14 h-14 bg-[#2F5B2E] text-white flex items-center justify-center rounded-xl font-black">RS</div>
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 border-b border-black/10 bg-[#F6F1E8]/90 backdrop-blur">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3 min-w-0">
+        <div class="w-14 h-14 rounded-2xl bg-[#2F5B2E] text-white flex items-center justify-center font-black text-lg shrink-0">
+          RS
+        </div>
+        <div class="min-w-0">
+          <p class="text-2xl sm:text-3xl font-black tracking-tight leading-none">
+            Restart Social
+          </p>
+          <p class="text-xs sm:text-sm text-black/60 mt-1">
+            Asociación para reinventarse y avanzar
+          </p>
+        </div>
+      </div>
+
+      <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-black/70">
+        <a href="#que-es" class="hover:text-black transition">Qué es</a>
+        <a href="#hacemos" class="hover:text-black transition">Qué hacemos</a>
+        <a href="#equipo" class="hover:text-black transition">Equipo</a>
+        <a href="#contacto" class="hover:text-black transition">Contacto</a>
+      </nav>
+
+      <a
+        href="mailto:info.restart.social@gmail.com?subject=Información%20Restart%20Social"
+        class="rounded-full bg-[#2F5B2E] px-5 py-3 text-xs sm:text-sm font-semibold text-white hover:bg-[#244724] transition whitespace-nowrap"
+      >
+        Contacto
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-[#2F5B2E]/10 via-transparent to-transparent"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-12 lg:py-14 grid lg:grid-cols-[1.05fr_0.95fr] gap-8 items-center relative">
+
+      <!-- TEXTO -->
+      <div class="space-y-5">
+        <span class="inline-block text-xs font-semibold px-4 py-2 rounded-full border border-black/10 bg-white/70 shadow-sm">
+          Talento joven · transición · rural · bienestar · IA
+        </span>
+
+        <div class="space-y-4">
+          <p class="text-[#2F5B2E] text-sm font-bold uppercase tracking-[0.15em]">
+            Restart Social
+          </p>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-[56px] font-black leading-[0.95] tracking-tight max-w-4xl">
+            Acompañamos procesos de reinvención
+            <span class="block text-[#2F5B2E] mt-2">
+              personal y profesional
+            </span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-black/70 max-w-2xl leading-relaxed">
+            Impulsamos el talento joven, acompañamos a personas en transición y acercamos oportunidades reales a colectivos con menos acceso, especialmente en entornos rurales.
+          </p>
+        </div>
+
+        <div class="flex gap-4 flex-wrap pt-1">
+          <a
+            href="#contacto"
+            class="rounded-full bg-black text-[#F6F1E8] px-7 py-3 text-sm font-semibold shadow-md hover:opacity-90 transition"
+          >
+            Quiero más información
+          </a>
+          <a
+            href="#equipo"
+            class="rounded-full border border-black/15 bg-white/70 px-7 py-3 text-sm font-semibold hover:bg-white transition"
+          >
+            Conocer al equipo
+          </a>
+        </div>
+
+        <div class="grid sm:grid-cols-3 gap-3 pt-3">
+          <div class="rounded-2xl bg-white/75 border border-black/10 px-4 py-3 text-sm shadow-sm">
+            <p class="font-semibold">Talento joven</p>
+          </div>
+          <div class="rounded-2xl bg-white/75 border border-black/10 px-4 py-3 text-sm shadow-sm">
+            <p class="font-semibold">Transición y bienestar</p>
+          </div>
+          <div class="rounded-2xl bg-white/75 border border-black/10 px-4 py-3 text-sm shadow-sm">
+            <p class="font-semibold">Impacto rural</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- IMAGEN INTEGRADA -->
+      <div class="relative h-[420px] sm:h-[480px] lg:h-[520px]">
+        <div class="absolute inset-0 rounded-[2.5rem] bg-[#D9D6A5] shadow-xl border border-black/10 overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-b from-white/20 to-transparent"></div>
+
+          <!-- Rocío -->
+          <img
+            src="Taller marca personal y linkedin (1).jpg"
+            alt="Rocío Vázquez"
+            class="absolute bottom-0 left-[2%] h-[90%] object-contain"
+          />
+
+          <!-- Sara -->
+          <img
+            src="Taller marca personal y linkedin (2).jpg"
+            alt="Sara Domínguez"
+            class="absolute bottom-0 right-[0%] h-[82%] object-contain"
+          />
+
+          <!-- Labels -->
+          <div class="absolute left-5 bottom-5 bg-white/88 backdrop-blur rounded-2xl px-4 py-2 shadow-sm border border-black/10">
+            <p class="text-sm font-semibold leading-none">Rocío Vázquez</p>
+            <p class="text-xs text-black/60 mt-1">Salud · Digital · Bienestar</p>
+          </div>
+
+          <div class="absolute right-5 top-5 bg-white/88 backdrop-blur rounded-2xl px-4 py-2 shadow-sm border border-black/10 text-right">
+            <p class="text-sm font-semibold leading-none">Sara Domínguez</p>
+            <p class="text-xs text-black/60 mt-1">Orientación · Social</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUÉ ES -->
+  <section id="que-es" class="border-t border-black/10 bg-white/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-12 grid lg:grid-cols-[1.05fr_0.95fr] gap-8 items-start">
       <div>
-        <p class="text-3xl font-black">Restart Social</p>
-        <p class="text-xs text-black/60">Asociación para reinventarse y avanzar</p>
-      </div>
-    </div>
-
-    <a href="mailto:info.restart.social@gmail.com?subject=Información%20Restart%20Social"
-       class="bg-[#2F5B2E] text-white px-5 py-2 rounded-full text-sm font-semibold">
-      Contacto
-    </a>
-  </div>
-</header>
-
-<!-- HERO -->
-<section class="max-w-7xl mx-auto px-4 py-20 grid lg:grid-cols-2 gap-12 items-center">
-
-  <!-- TEXTO -->
-  <div class="space-y-6">
-    <span class="text-xs bg-white px-3 py-2 rounded-full border">
-      Talento joven · transición · rural · bienestar · IA
-    </span>
-
-    <h1 class="text-5xl font-black leading-tight">
-      Acompañamos procesos de reinvención
-      <span class="text-[#2F5B2E] block">
-        personal y profesional
-      </span>
-    </h1>
-
-    <p class="text-lg text-black/70">
-      Restart Social es una asociación impulsada por dos profesionales del ámbito social y sanitario
-      que trabaja para retener el talento joven, acompañar a personas en transición y acercar oportunidades
-      reales a colectivos con menos acceso, especialmente en entornos rurales.
-    </p>
-
-    <div class="flex gap-4">
-      <a href="#contacto" class="bg-black text-white px-6 py-3 rounded-full">
-        Quiero más información
-      </a>
-      <a href="#equipo" class="border px-6 py-3 rounded-full">
-        Conocer al equipo
-      </a>
-    </div>
-  </div>
-
-  <!-- IMÁGENES -->
-  <div class="flex gap-6 justify-center items-end">
-
-    <div class="text-center">
-      <img src="Taller marca personal y linkedin (1).jpg"
-           class="w-[300px] h-[420px] object-contain bg-[#D8D6A3] rounded-3xl shadow-xl"/>
-      <p class="mt-3 font-semibold">Rocío Vázquez</p>
-      <p class="text-xs text-black/60">Salud · Digital · Bienestar</p>
-    </div>
-
-    <div class="text-center">
-      <img src="Taller marca personal y linkedin (2).jpg"
-           class="w-[300px] h-[420px] object-contain bg-[#D8D6A3] rounded-3xl shadow-xl"/>
-      <p class="mt-3 font-semibold">Sara Domínguez</p>
-      <p class="text-xs text-black/60">Orientación · Social</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- QUE ES -->
-<section class="bg-white py-20">
-  <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-10">
-    <div>
-      <h2 class="text-4xl font-black">Qué es Restart Social</h2>
-      <p class="mt-4 text-black/70">
-        Acompañamos a personas en procesos de cambio personal y profesional desde un enfoque integral:
-        orientación laboral, bienestar y herramientas digitales.
-      </p>
-      <p class="mt-4 text-black/70">
-        Ponemos el foco en contextos donde el acceso es más limitado, especialmente en entornos rurales.
-      </p>
-    </div>
-
-    <div class="space-y-4">
-      <div class="bg-[#F6F1E8] p-6 rounded-xl">Talento joven</div>
-      <div class="bg-[#F6F1E8] p-6 rounded-xl">Personas en transición</div>
-      <div class="bg-[#F6F1E8] p-6 rounded-xl">Colectivos rurales</div>
-    </div>
-  </div>
-</section>
-
-<!-- FRASE -->
-<section class="py-20">
-  <div class="max-w-5xl mx-auto text-center">
-    <h2 class="text-4xl font-black text-[#2F5B2E]">
-      No hay cambio profesional real sin bienestar personal
-    </h2>
-  </div>
-</section>
-
-<!-- SERVICIOS -->
-<section class="bg-white py-20">
-  <div class="max-w-6xl mx-auto px-4">
-    <h2 class="text-4xl font-black mb-10">Qué hacemos</h2>
-
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-      <div class="p-6 bg-[#F6F1E8] rounded-xl">Orientación laboral</div>
-      <div class="p-6 bg-[#F6F1E8] rounded-xl">Soft skills</div>
-      <div class="p-6 bg-[#F6F1E8] rounded-xl">Salud y bienestar</div>
-      <div class="p-6 bg-[#F6F1E8] rounded-xl">Formación en IA</div>
-    </div>
-  </div>
-</section>
-
-<!-- IMPACTO -->
-<section class="py-20">
-  <div class="max-w-6xl mx-auto px-4">
-    <h2 class="text-4xl font-black">Impacto</h2>
-    <p class="mt-4 text-black/70">
-      Trabajamos para reducir brechas sociales, digitales y territoriales,
-      impulsando oportunidades reales y sostenibles.
-    </p>
-  </div>
-</section>
-
-<!-- EQUIPO -->
-<section id="equipo" class="bg-white py-20">
-  <div class="max-w-6xl mx-auto px-4">
-    <h2 class="text-4xl font-black mb-10">Equipo</h2>
-
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="bg-[#F6F1E8] p-6 rounded-xl">
-        <h3 class="font-bold">Rocío Vázquez</h3>
-        <p class="text-sm text-black/70 mt-2">
-          Farmacéutica especializada en salud, bienestar y digitalización.
+        <p class="text-[#2F5B2E] text-sm font-bold uppercase tracking-[0.15em]">Qué es Restart Social</p>
+        <h2 class="mt-3 text-3xl sm:text-4xl font-black tracking-tight">
+          Un proyecto para generar oportunidades reales
+        </h2>
+        <p class="mt-5 text-base text-black/70 leading-relaxed">
+          Restart Social es una asociación enfocada en acompañar a personas en procesos de cambio personal y profesional desde un enfoque integral: orientación laboral, desarrollo de habilidades, bienestar y formación en inteligencia artificial.
+        </p>
+        <p class="mt-4 text-base text-black/70 leading-relaxed">
+          Prestamos especial atención a la retención del talento joven, a personas que atraviesan etapas de transición y a colectivos con menos acceso a estos recursos, especialmente en entornos rurales.
         </p>
       </div>
 
-      <div class="bg-[#F6F1E8] p-6 rounded-xl">
-        <h3 class="font-bold">Sara Domínguez</h3>
-        <p class="text-sm text-black/70 mt-2">
-          Educadora social especializada en orientación laboral.
+      <div class="grid md:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3 gap-4">
+        <div class="rounded-[1.5rem] bg-[#F6F1E8] border border-black/10 p-5 shadow-sm">
+          <p class="font-black text-base">Talento joven</p>
+          <p class="mt-2 text-sm text-black/70">
+            Ayudamos a jóvenes con potencial a encontrar dirección, oportunidades y herramientas.
+          </p>
+        </div>
+        <div class="rounded-[1.5rem] bg-[#F6F1E8] border border-black/10 p-5 shadow-sm">
+          <p class="font-black text-base">Personas en transición</p>
+          <p class="mt-2 text-sm text-black/70">
+            Acompañamos cambios personales y profesionales con apoyo real y visión práctica.
+          </p>
+        </div>
+        <div class="rounded-[1.5rem] bg-[#F6F1E8] border border-black/10 p-5 shadow-sm">
+          <p class="font-black text-base">Entornos rurales</p>
+          <p class="mt-2 text-sm text-black/70">
+            Acercamos orientación, bienestar e IA a territorios con menos acceso a oportunidades.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HACEMOS -->
+  <section id="hacemos" class="border-t border-black/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
+      <div class="max-w-3xl">
+        <p class="text-[#2F5B2E] text-sm font-bold uppercase tracking-[0.15em]">Qué hacemos</p>
+        <h2 class="mt-3 text-3xl sm:text-4xl font-black tracking-tight">
+          Acompañamiento práctico para avanzar con más claridad
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-5 mt-8">
+        <div class="rounded-[1.75rem] bg-white border border-black/10 p-6 shadow-sm">
+          <p class="text-xs font-bold text-[#2F5B2E] uppercase tracking-[0.15em]">01</p>
+          <h3 class="mt-3 font-black text-xl">Orientación laboral</h3>
+          <p class="mt-3 text-sm text-black/70 leading-relaxed">
+            Definición de objetivos, itinerarios y próximos pasos para mejorar la empleabilidad.
+          </p>
+        </div>
+
+        <div class="rounded-[1.75rem] bg-white border border-black/10 p-6 shadow-sm">
+          <p class="text-xs font-bold text-[#2F5B2E] uppercase tracking-[0.15em]">02</p>
+          <h3 class="mt-3 font-black text-xl">Soft skills</h3>
+          <p class="mt-3 text-sm text-black/70 leading-relaxed">
+            Comunicación, confianza, autonomía, adaptabilidad y otras habilidades clave.
+          </p>
+        </div>
+
+        <div class="rounded-[1.75rem] bg-white border border-black/10 p-6 shadow-sm">
+          <p class="text-xs font-bold text-[#2F5B2E] uppercase tracking-[0.15em]">03</p>
+          <h3 class="mt-3 font-black text-xl">Salud y bienestar</h3>
+          <p class="mt-3 text-sm text-black/70 leading-relaxed">
+            Estrategias de autocuidado y bienestar como base para sostener el cambio.
+          </p>
+        </div>
+
+        <div class="rounded-[1.75rem] bg-white border border-black/10 p-6 shadow-sm">
+          <p class="text-xs font-bold text-[#2F5B2E] uppercase tracking-[0.15em]">04</p>
+          <h3 class="mt-3 font-black text-xl">Formación en IA</h3>
+          <p class="mt-3 text-sm text-black/70 leading-relaxed">
+            Herramientas de inteligencia artificial aplicadas al aprendizaje y la autonomía digital.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-8 rounded-[2rem] bg-[#2F5B2E] text-white p-7 sm:p-8 shadow-xl">
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-white/70">
+          Nuestro diferencial
+        </p>
+        <h3 class="mt-3 text-2xl sm:text-3xl font-black">
+          No hay cambio profesional real sin bienestar personal
+        </h3>
+        <p class="mt-3 text-sm sm:text-base text-white/80 max-w-3xl">
+          En Restart Social entendemos que reinventarse no es solo aprender nuevas herramientas o mejorar un currículum. También implica recuperar claridad, fortalecer la confianza y avanzar desde una base personal sólida.
         </p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CTA -->
-<section id="contacto" class="py-20 text-center">
-  <h2 class="text-4xl font-black">Hablemos</h2>
-  <p class="mt-4 text-black/70">
-    Escríbenos para colaborar o conocer más sobre el proyecto
-  </p>
+  <!-- EQUIPO -->
+  <section id="equipo" class="border-t border-black/10 bg-white/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
+      <div class="max-w-3xl">
+        <p class="text-[#2F5B2E] text-sm font-bold uppercase tracking-[0.15em]">Equipo</p>
+        <h2 class="mt-3 text-3xl sm:text-4xl font-black tracking-tight">
+          Dos perfiles complementarios para un impacto real
+        </h2>
+      </div>
 
-  <a href="mailto:info.restart.social@gmail.com"
-     class="inline-block mt-6 bg-black text-white px-6 py-3 rounded-full">
-    Escribir ahora
-  </a>
-</section>
+      <div class="grid md:grid-cols-2 gap-6 mt-8">
+        <article class="rounded-[2rem] overflow-hidden border border-black/10 bg-white shadow-lg">
+          <div class="bg-[#D8D6A3]">
+            <img
+              src="Taller marca personal y linkedin (1).jpg"
+              alt="Rocío Vázquez Saldaña"
+              class="w-full h-[320px] object-contain object-center"
+            />
+          </div>
+          <div class="p-6">
+            <p class="text-xs font-extrabold text-[#2F5B2E] uppercase tracking-[0.15em]">Co-fundadora</p>
+            <h3 class="mt-2 font-black text-2xl">Rocío Vázquez</h3>
+            <p class="text-sm text-black/70 mt-3 leading-relaxed">
+              Farmacéutica y profesional orientada a la salud, el bienestar y la digitalización. Aporta una visión estratégica del cambio personal y profesional.
+            </p>
+          </div>
+        </article>
 
-<!-- FOOTER -->
-<footer class="border-t py-6 text-center text-sm text-black/60">
-  © 2026 Restart Social · info.restart.social@gmail.com
-</footer>
+        <article class="rounded-[2rem] overflow-hidden border border-black/10 bg-white shadow-lg">
+          <div class="bg-[#D8D6A3]">
+            <img
+              src="Taller marca personal y linkedin (2).jpg"
+              alt="Sara Domínguez Fombella"
+              class="w-full h-[320px] object-contain object-center"
+            />
+          </div>
+          <div class="p-6">
+            <p class="text-xs font-extrabold text-[#2F5B2E] uppercase tracking-[0.15em]">Co-fundadora</p>
+            <h3 class="mt-2 font-black text-2xl">Sara Domínguez</h3>
+            <p class="text-sm text-black/70 mt-3 leading-relaxed">
+              Educadora social especializada en orientación laboral y trabajo con colectivos en situación de vulnerabilidad.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
+  <!-- CONTACTO -->
+  <section id="contacto" class="border-t border-black/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
+      <div class="rounded-[2rem] border border-black/10 bg-white p-8 sm:p-10 shadow-lg">
+        <div class="grid lg:grid-cols-[1fr_auto] gap-8 items-center">
+          <div>
+            <p class="text-[#2F5B2E] text-sm font-bold uppercase tracking-[0.15em]">Contacto</p>
+            <h2 class="mt-3 text-3xl sm:text-4xl font-black tracking-tight">
+              Hablemos
+            </h2>
+            <p class="mt-4 text-base text-black/70 max-w-2xl leading-relaxed">
+              Si quieres conocer Restart Social, proponer una colaboración o explorar posibles programas y actividades, escríbenos.
+            </p>
+          </div>
+
+          <div class="space-y-3 text-sm">
+            <p>
+              <span class="font-bold">Email:</span>
+              <a href="mailto:info.restart.social@gmail.com" class="text-[#2F5B2E] font-semibold">
+                info.restart.social@gmail.com
+              </a>
+            </p>
+            <p><span class="font-bold">Ubicación inicial:</span> Sevilla</p>
+            <a
+              href="mailto:info.restart.social@gmail.com?subject=Información%20Restart%20Social"
+              class="inline-block mt-2 rounded-full bg-black text-[#F6F1E8] px-6 py-3 text-sm font-semibold shadow-md hover:opacity-90 transition"
+            >
+              Escribir ahora
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-black/10 text-xs text-black/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-6 flex flex-col sm:flex-row justify-between gap-3">
+      <p>© <span id="year"></span> Restart Social</p>
+      <p>
+        Contacto:
+        <a href="mailto:info.restart.social@gmail.com" class="font-semibold text-[#2F5B2E]">
+          info.restart.social@gmail.com
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
